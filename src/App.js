@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Leaderboards from './Leaderboards'
 import './App.css';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <div className="container">
+        <div className="title my-1">
+          <h1 className="text-center my-2">
+          <b>Diablo 3 Leaderboards</b>
+          </h1>
+        </div>
+        <div className="main">
+          <div className="row justify-content-center">
+            <div className="col-10">
+              <Leaderboards />
+            </div>
+          </div>
+        </div>
+    </div>
     );
   }
 }

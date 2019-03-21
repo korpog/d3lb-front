@@ -1,33 +1,58 @@
-.App {
-  text-align: center;
-}
+ @import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+ @import url('https://fonts.googleapis.com/css?family=Muli');
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+ body {
+   background: rgb(69, 77, 85);
+   font-family: 'Muli', sans-serif;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ h1 {
+   color: moccasin;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ label {
+   font-weight: bold;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ thead {
+   background: rgb(30, 30, 30);
+ }
+
+ thead tr {
+   border: ridge 3px gray;
+ }
+
+ th,
+ td {
+   text-align: center;
+ }
+
+ .title {
+   background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+   border-radius: 5px;
+   border-bottom: solid 1px crimson;
+   border-top: solid 1px crimson;
+ }
+
+
+ .btn {
+   color: white;
+   background: crimson;
+   border: 1px solid burlywood;
+   text-align: center;
+ }
+
+ .btn:focus {
+   color: black;
+   background: crimson;
+ }
+
+ .lbl {
+   color: whitesmoke;
+ }
+
+ .diablo-form {
+   background: #45484d;
+   border: ridge 3px slategray;
+   border-radius: 5px;
+ }
