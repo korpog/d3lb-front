@@ -10,7 +10,7 @@ class  Leaderboard  extends  Component {
     constructor(props) {
         super(props);      
         this.state = {region: 'us', class_name: 'barbarian',
-        game_mode: '', season: 1, leaderboard: []};
+        game_mode: '', season: 16, leaderboard: []};
         
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,7 +18,7 @@ class  Leaderboard  extends  Component {
     }
 
     componentDidMount() {
-        leaderboardAPI.getLeaderboard('us-barbarian-s1')
+        leaderboardAPI.getLeaderboard('us-barbarian-s16')
         .then((response) => {
             this.setState({ leaderboard:  response.records})
         })
@@ -88,7 +88,7 @@ class  Leaderboard  extends  Component {
           </div>
           <div className="col-sm-3 my-1">
             <input className="form-control" name="season" type="number"  min="1" max="16"
-            value={this.state.value} placeholder="Season" defaultValue="1" onChange={this.handleChange}/> 
+            value={this.state.value} placeholder="Season" defaultValue="16" onChange={this.handleChange}/> 
           </div>
         </div>
         <div className="row justify-content-center">
