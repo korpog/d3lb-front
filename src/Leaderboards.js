@@ -18,7 +18,7 @@ class  Leaderboard  extends  Component {
     }
 
     componentDidMount() {
-        leaderboardAPI.getLeaderboard('us-barbarian-s16')
+        leaderboardAPI.getLeaderboard('us-barbarian-s19')
         .then((response) => {
             this.setState({ leaderboard:  response.records})
         })
