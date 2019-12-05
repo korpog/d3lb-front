@@ -57,7 +57,11 @@ class  Leaderboard  extends  Component {
 
       return (
       <div className="leaderboards">
+        <div className="row justify-content-center text-warning">
+          only last season data available (free heroku account database limit)
+        </div>
         <div className="row justify-content-center">
+
           <div className="col-10 m-2">
       <form className="p-2 diablo-form" onSubmit={this.handleSubmit}>
         <div className="row mb-3 justify-content-center">
@@ -99,7 +103,7 @@ class  Leaderboard  extends  Component {
         </form>
       <div className="row justify-content-center">
         <span>
-          <label className="lbl">Results page (1-20): </label>
+          <label className="lbl">Results page: </label>
           <input className="form-control" name="page" type="number"  min="1" max="20"
             placeholder="Results page" defaultValue="1" onChange={this.goToPage}/> 
         </span>
