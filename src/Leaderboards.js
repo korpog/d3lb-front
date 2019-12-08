@@ -57,9 +57,6 @@ class  Leaderboard  extends  Component {
 
       return (
       <div className="leaderboards">
-        <div className="row justify-content-center text-warning">
-          only last season data available (free heroku account database limit)
-        </div>
         <div className="row justify-content-center">
 
           <div className="col-10 m-2">
@@ -92,7 +89,7 @@ class  Leaderboard  extends  Component {
           </div>
           <div className="col-sm-3 my-1">
             <input className="form-control" name="season" type="number"  min="1" max="19"
-            value={this.state.value} placeholder="Season" defaultValue="19" onChange={this.handleChange}/> 
+            value={this.state.value} placeholder="Season" defaultValue="19" onChange={this.handleChange} disabled/> 
           </div>
         </div>
         <div className="row justify-content-center">
