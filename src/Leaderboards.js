@@ -88,7 +88,8 @@ class  Leaderboard  extends  Component {
             </select>
           </div>
           <div className="col-sm-3 my-1">
-            <input className="form-control" name="season" type="number"  min="1" max="19"
+            {/* change this later to type=number */}
+            <input className="form-control" name="season" type="text"  min="1" max="19"
             value={this.state.value} placeholder="Season" defaultValue="Season 19" onChange={this.handleChange} disabled/> 
           </div>
         </div>
