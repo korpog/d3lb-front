@@ -89,7 +89,7 @@ class  Leaderboard  extends  Component {
           </div>
           <div className="col-sm-3 my-1">
             <input className="form-control" name="season" type="number"  min="1" max="19"
-            value={this.state.value} placeholder="Season" defaultValue="19" onChange={this.handleChange} disabled/> 
+            value={this.state.value} placeholder="Season" defaultValue="Season 19" onChange={this.handleChange} disabled/> 
           </div>
         </div>
         <div className="row justify-content-center">
